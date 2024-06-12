@@ -1,12 +1,14 @@
-<input type="text" autofocus id="num">
-<button onclick="getTable()">Show Table</button>
+<input type="text" autofocus id="num" placeholder="Enter Number">
+<button onclick="getFactorial()">This will print the factorial</button>
 <p id="result"></p>
 <script>
-function getTable() {
+function getFactorial() {
   num=document.getElementById('num').value
-  output=''
-  for(let i=1;i<=10;i++)
-    output= output+ `${num}*${i}=${num*i} <br>`
+  output=sum
+  sum=1
+  for(let i=1;i<=num;i++)
+    value=sum*1
+    sum=sum+value
   console.log(output);
   document.getElementById("result").innerHTML=output
 }
