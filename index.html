@@ -1,11 +1,11 @@
-<input type="textbox" name="" id="table">
-<h1 id="table">
-  Table:
-</h1>
-<p>
-<table>
-  5*1=5
-  5*2=10
-  5*3=15
-</table>
-</p>
+<input type="text" autofocus id="num">
+<button onclick="getTable()"></button>
+<script>
+function getTable() {
+  num=document.getElementById('num').value
+  output=''
+  for(let i=1;i<=10;i++)
+    output= output+ `${num}*${i}=${num*i} <br>`
+  document.getElementById("result").innerHTML=output
+}
+</script>
