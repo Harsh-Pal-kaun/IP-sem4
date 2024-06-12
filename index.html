@@ -1,11 +1,13 @@
 <input type="text" autofocus id="num">
-<button onclick="getTable()"></button>
+<button onclick="getTable()">Show Table</button>
+<p id="result"></p>
 <script>
 function getTable() {
   num=document.getElementById('num').value
   output=''
   for(let i=1;i<=10;i++)
     output= output+ `${num}*${i}=${num*i} <br>`
+  console.log(output);
   document.getElementById("result").innerHTML=output
 }
 </script>
